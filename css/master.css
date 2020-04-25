@@ -54,3 +54,21 @@ header .site-title {
 .navbar-brand > img {
 	border-radius: 50%;
 }
+
+/*Navigation Menu*/
+.navbar-nav {
+	padding: 0.8em 0em;
+}
+
+.navbar-nav .nav-link {
+	font-size: 0.9em;
+	color: var(--light-gray);
+}
+
+.navbar-nav .nav-item .nav-link {
+	padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon {
+	margin-right: 6.5rem !important;
+}
