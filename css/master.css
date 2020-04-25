@@ -50,3 +50,7 @@ header .site-title {
 	font-size: 0.9em;
 	color: white;
 }
+
+.navbar-brand > img {
+	border-radius: 50%;
+}
