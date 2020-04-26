@@ -1,4 +1,4 @@
-/* import fonts from google fonts */
+ import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap');
 
 :root {
@@ -78,6 +78,7 @@ main {
 	margin: 0 auto;
 }
 
+/*Slider One*/
 .slider-one {
 	width: 50%;
 	margin: 0 auto;
@@ -97,6 +98,21 @@ main {
 	
 }
 
-/*.slick-prev {
-	left: 8em;
-}*/
+.position-top {
+	position: absolute;
+	top: 50%;
+}
+
+.site-slider {
+	position: relative;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next {
+	background: #45ccb8;
+	padding: 1rem 1.5rem;
+}
+
+.right-0 {
+	right: 0;
+}

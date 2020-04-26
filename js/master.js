@@ -1,6 +1,10 @@
 // First Slider
-$('.slider-one').slick({
+$('.slider-one')
+	.not('slick-initialized')
+	.slick({
 	autoplay: true,
 	autoplaySpeed: 3000,
-	dots: true
+	dots: true,
+	prevArrow: ".site-slider .slider-btn .prev",
+	nextArrow: ".site-slider .slider-btn .next"
 });
