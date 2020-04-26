@@ -72,3 +72,31 @@ header .site-title {
 .navbar-nav .basket-icon {
 	margin-right: 6.5rem !important;
 }
+
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.slider-one {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.slider-one > div{
+	display: block;
+
+	width: 100%;
+	margin: 0 auto;
+}
+
+.slider-one > div img{
+	
+
+	width: 100%;
+	
+}
+
+/*.slick-prev {
+	left: 8em;
+}*/
