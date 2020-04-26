@@ -1,4 +1,4 @@
- import fonts from google fonts */
+ /*import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap');
 
 :root {
@@ -109,7 +109,7 @@ main {
 
 .site-slider .slider-btn .prev,
 .site-slider .slider-btn .next {
-	background: #45ccb8;
+	background: var(--primary-color);
 	padding: 1rem 1.5rem;
 }
 
