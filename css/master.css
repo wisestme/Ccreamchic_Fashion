@@ -146,10 +146,42 @@ main {
 }
 
 /*Second Slider*/
+.slider-two {
+	width: 100%;
+}
 .site-slider-two img {
-	height: 300px;
+	width: 90%;
+	margin: auto;
+	/*height: 300px;*/
 }
 
 .site-slider-two {
 	position: relative;
+	width: 100%;
+}
+
+.site-slider-two .product {
+	height: 15rem;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.site-btn.btn-span {
+	padding: 0.3rem 0.9rem;
+	border-radius: 4rem;
+	border: 1px solid var(--border);
+}
+
+.slider-two .slick-track .product .site-btn:hover {
+	background-color: var(--primary-color);
+}
+
+.site-slider-two .prev,
+.site-slider-two .next {
+	background: var(--primary-color);
+	padding: 1rem 1.5rem;
+	border-radius: 10rem;
+	color: white;
+	margin: 0 1rem;
 }
