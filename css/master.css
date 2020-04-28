@@ -133,10 +133,11 @@ main {
 .slider-item {
 	display: block;
 	justify-content: space-between;
+	text-align: center;
 }
 
 .slider-item div:last-child {
-	width: 60%;
+	width: 100%;
 }
 
 .slider-item div:first-child {
@@ -195,6 +196,9 @@ main {
 	.slider-item {
 	display: flex;
 	justify-content: space-between;
+}
+	.slider-item div:last-child {
+	width: 60%;
 }
 }
 
