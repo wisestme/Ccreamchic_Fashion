@@ -92,7 +92,6 @@ main {
 
 .slider-one > div img{
 	width: 100%;
-	
 }
 
 .position-top {
@@ -141,4 +140,8 @@ main {
 	align-self: center;
 	justify-self: center;
 	margin: 0 auto;
+}
+
+.site-slider-two img {
+	height: 300px;
 }
