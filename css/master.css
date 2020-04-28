@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap');
 
 :root {
-	--primary-color: #45ccb8;
+	--primary-color: #1C3B67;
 	--light-gray: #2b3032a1;
 	--border: #2b303218;
 	--text-color: #ff686b;
@@ -184,4 +184,8 @@ main {
 	border-radius: 10rem;
 	color: white;
 	margin: 0 1rem;
+}
+
+.hide_small {
+	display: none;
 }
