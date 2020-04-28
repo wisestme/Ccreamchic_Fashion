@@ -80,20 +80,17 @@ main {
 
 /*Slider One*/
 .slider-one {
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 }
 
-.slider-one > div{
+.slider-one > div {
 	display: block;
-
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .slider-one > div img{
-	
-
 	width: 100%;
 	
 }
@@ -130,3 +127,18 @@ main {
 	bottom: 0;
 	right: 50%;
 }*/
+
+.slider-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider-item div:last-child {
+	width: 60%;
+}
+
+.slider-item div:first-child {
+	align-self: center;
+	justify-self: center;
+	margin: 0 auto;
+}
