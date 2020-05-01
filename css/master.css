@@ -99,6 +99,7 @@ footer {
 
 .subscribe form {
 	justify-content: center;
+	margin-top: 2em;
 }
 
 .subscribe input:first-child{
