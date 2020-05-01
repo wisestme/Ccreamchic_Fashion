@@ -81,7 +81,7 @@ svg {
 	padding: 0.1em;
 	margin-right: 0.3em;
 	color: var(--accent);
-	fill: var(--accent)
+	fill: var(--accent);
 }
 
 .hide_small {
@@ -162,6 +162,11 @@ video {
 
 .contact_social > div {
 	margin: 1em 0;
+}
+
+.footer_menu {
+	background: var(--primary-color);
+	color: var(--accent);
 }
 
 main,
