@@ -131,12 +131,25 @@ input {
 
 .info > div {
 	width: 98%;
-	margin: 1em auto;
+	margin: 1em auto 2em auto;
 }
 
 video {
 	width: 90%;
 	align-self: center;
+}
+
+.contact_social {
+	align-items: center;
+}
+
+.contact_social > .social {
+	width: 50%;
+	justify-content: space-around;
+}
+
+.contact_social > div {
+	margin: 1em 0;
 }
 
 main,
