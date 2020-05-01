@@ -22,6 +22,11 @@
 	display: flex;
 }
 
+.col_small {
+	display: flex;
+	flex-direction: column;
+}
+
 .flex {
 	display: flex;
 }
@@ -81,8 +86,7 @@ svg {
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
+	
 	width: 100%;
 }
 .subscribe {
@@ -115,6 +119,24 @@ input[type=submit] {
 input {
 	padding: 1em;
 	border-radius: 1em;
+}
+
+#upper_footer > div {
+	margin-top: 2em;
+}
+
+#upper_footer > .col_small {
+	padding: 1em;
+}
+
+.info > div {
+	width: 98%;
+	margin: 1em auto;
+}
+
+video {
+	width: 90%;
+	align-self: center;
 }
 
 main,
