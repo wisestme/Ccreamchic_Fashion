@@ -1,6 +1,10 @@
  /*import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap');
-
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 :root {
 	--primary-color: #0e1c36;
 	--accent: #e31d5a;
@@ -13,14 +17,19 @@
 	--sofia: "Sofia", cursive;
 }
 
+
 .flex_small {
+	display: flex;
+}
+
+.flex {
 	display: flex;
 }
 
 header {
 	background: var(--primary-color);
 	padding: 2em 0;
-	height: 23vh;
+	height: 25vh;
 }
 
 #upper_header {
@@ -34,14 +43,28 @@ header {
 h1 {
 	color: var(--header-main);
 	font-family: gugi, sans-serif;
-	letter-spacing: 2px;
 	text-align: center;
 }
 
-svg {
+h2 {
+	font-family: sofia, sans-serif;
+}
+
+h1,h2 {
+	letter-spacing: 3px;
+}
+
+header svg {
 	width: 40px;
 	height: 40px;
 	color: var(--accent);
+}
+
+svg {
+	width: 30px;
+	height: 30px;
+	padding: 0.1em;
+	margin-right: 0.3em;
 }
 
 .hide_small {
@@ -49,6 +72,55 @@ svg {
 }
 
 .fa-bars {
+	/*position: absolute;
+	right: 2em;*/
+	float: right;
+	position: relative;
+	bottom: 1em;
+	right: 1em;
+}
+
+footer {
 	position: absolute;
-	right: 2em;
+	bottom: 0;
+	width: 100%;
+}
+.subscribe {
+	background: var(--primary-color);
+	padding: 1em 0;
+	color: var(--header-main);
+	text-align: center;
+}
+.subscribe > div {
+	align-items: center;
+	justify-content: center;
+	color: var(--accent);
+}
+
+.subscribe form {
+	justify-content: center;
+}
+
+.subscribe input:first-child{
+	width: 250px;
+
+}
+
+input[type=submit] {
+	background: var(--accent);
+	color: var(--header-main);
+}
+
+input {
+	padding: 1em;
+	border-radius: 1em;
+}
+
+main,
+footer {
+	margin-top: 2em;
+}
+
+.test {
+	border: 2px solid red;
 }
