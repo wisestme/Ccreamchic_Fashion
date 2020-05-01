@@ -32,6 +32,9 @@
 }
 
 /*header*/
+/*#header {
+	background: #ff0000;
+}*/
 header {
 	background-color: var(--primary-color);
 	font-family: var(--roboto);
@@ -106,7 +109,7 @@ main {
 .site-slider .slider-btn .prev,
 .site-slider .slider-btn .next {
 	background: var(--primary-color);
-	padding: 1rem 1.5rem;
+	padding: 0.5rem 1rem;
 	border-radius: 10rem;
 	color: white;
 	margin: 0 1rem;
@@ -181,7 +184,7 @@ main {
 .site-slider-two .prev,
 .site-slider-two .next {
 	background: var(--primary-color);
-	padding: 1rem 1.5rem;
+	padding: 0.1rem 0.6rem;
 	border-radius: 10rem;
 	color: white;
 	margin: 0 1rem;
