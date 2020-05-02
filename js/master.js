@@ -1,3 +1,4 @@
+// VARIABLES DECLARATIONS
 let phoneIcon = document.querySelector('.phone_icon');
 let modal = document.querySelector('.modal');
 let closeIcon = document.querySelector('.close');
@@ -8,7 +9,7 @@ let hamburgerCloseIcon = document.querySelector('.hamburger_close');
 
 
 
-
+// COLLAPSE/EXPAND QUICK CONTACT MODAL
 phoneIcon.addEventListener('click', () => {
 	modal.style.right = '0';
 });
@@ -17,6 +18,7 @@ closeIcon.addEventListener('click', () => {
 	modal.style.right = '-300px';
 });
 
+// COLLAPSE/EXPAND HAMBURGER MENU
 hamburgerIcon.addEventListener('click', () => {
 	hamburgerModal.style.right = '0';
 	overlay.style.right = '0';
