@@ -65,6 +65,10 @@ p {
 	font-size: 1.5em;
 }
 
+ul {
+	list-style: none;
+}
+
 p > span {
 	color: var(--accent);
 	font-family: sofia;
@@ -166,7 +170,22 @@ video {
 
 .footer_menu {
 	background: var(--primary-color);
+	color: var(--header-main);
+}
+
+.footer_menu h2 {
 	color: var(--accent);
+}
+
+.footer_menu > div {
+	margin-bottom: 2em;
+	font-size: 1.3em;
+	padding: 0 2em;
+}
+
+.footer_menu li {
+	margin-bottom: 0.8em;
+	letter-spacing: 2px;
 }
 
 main,
