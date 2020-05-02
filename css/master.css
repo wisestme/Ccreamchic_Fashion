@@ -21,17 +21,20 @@ body {
 	font-family: roboto, sans-serif;
 }
 
-.flex_small {
+.col_small,
+.col,
+.flex_small,
+.flex {
 	display: flex;
 }
 
-.col_small {
-	display: flex;
+.col_small,
+.col {
 	flex-direction: column;
 }
 
-.flex {
-	display: flex;
+.grid {
+	display: grid;
 }
 
 header {
@@ -258,18 +261,44 @@ footer {
 	width: 100vw;
 	position: fixed;
 	top: 0;
-	right: -600px;
+	right: 0;
 	background: var(--primary-color);
 	transition: 0.5s ease;
 }
 
 .hamburger_modal {
 	height: 70vh;
+	justify-content: space-around;
 }
 
 .overlay {
 	height: 100vh;	
 	opacity: 0.9;
+}
+
+.hamburger_close {
+	position: relative;
+	right: -400px;
+	bottom: 20px;
+}
+
+.hamburger_modal > .social {
+	align-self: center;
+}
+
+.hamburger_modal a {
+	color: var(--header-main);
+	text-decoration: none;
+	margin-bottom: 1em;
+}
+
+.hamburger_modal li {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.hamburger_modal nav ul {
+	grid-template-columns: 1fr 1fr;
 }
 
 .test {
