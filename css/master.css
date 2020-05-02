@@ -191,6 +191,12 @@ video {
 	letter-spacing: 2px;
 }
 
+#lower_footer {
+	background: var(--primary-color);
+	color: var(--header-main);
+	text-align: center;
+}
+
 main,
 footer {
 	margin-top: 2em;
