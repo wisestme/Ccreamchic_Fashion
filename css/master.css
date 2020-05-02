@@ -17,6 +17,9 @@
 	--sofia: "Sofia", cursive;
 }
 
+body {
+	font-family: roboto, sans-serif;
+}
 
 .flex_small {
 	display: flex;
