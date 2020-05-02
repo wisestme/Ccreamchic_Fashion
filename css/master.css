@@ -218,6 +218,40 @@ footer {
 	right: 10px;
 }
 
+.modal {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	background: var(--primary-color);
+	box-shadow: 2px 2px 4px #fff;
+	padding: 1em;
+	border-radius: 2em 0 0 2em;
+}
+
+.close {
+	position: relative;
+	right: -240px;
+	/*top: 0.5em;*/
+}
+
+.modal li {
+	margin-bottom: 1em;
+	display: flex;
+}
+
+.modal a {
+	
+	color: var(--header-main);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.modal p {
+	font-size: 1.2em;
+}
+
 .test {
 	border: 2px solid red;
 }
