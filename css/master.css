@@ -241,8 +241,7 @@ footer {
 	display: flex;
 }
 
-.modal a {
-	
+.modal a {	
 	color: var(--header-main);
 	text-decoration: none;
 	display: flex;
@@ -253,10 +252,24 @@ footer {
 	font-size: 1.2em;
 }
 
-.hamburger_modal {
+.hamburger_modal,
+.overlay {
+	padding: 2em;
+	width: 100vw;
 	position: fixed;
 	top: 0;
-	right: -500px;
+	right: -600px;
+	background: var(--primary-color);
+	transition: 0.5s ease;
+}
+
+.hamburger_modal {
+	height: 70vh;
+}
+
+.overlay {
+	height: 100vh;	
+	opacity: 0.9;
 }
 
 .test {
