@@ -214,19 +214,20 @@ footer {
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	bottom: 20px;
+	bottom: 50px;
 	right: 10px;
 }
 
 .modal {
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: -300px;
 	width: 300px;
 	background: var(--primary-color);
 	box-shadow: 2px 2px 4px #fff;
 	padding: 1em;
 	border-radius: 2em 0 0 2em;
+	transition: 0.5s ease;
 }
 
 .close {
