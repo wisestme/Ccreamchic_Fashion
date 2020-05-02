@@ -253,6 +253,12 @@ footer {
 	font-size: 1.2em;
 }
 
+.hamburger_modal {
+	position: fixed;
+	top: 0;
+	right: -500px;
+}
+
 .test {
 	border: 2px solid red;
 }
