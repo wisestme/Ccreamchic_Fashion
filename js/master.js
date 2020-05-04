@@ -30,3 +30,14 @@ hamburgerCloseIcon.addEventListener('click', () => {
 	overlay.style.right = '-100vw';
 	phoneIcon.style.display = 'flex';
 });
+
+// First Slider
+$('.slider_one')
+	.not('slick-initialized')
+	.slick({
+	autoplay: true,
+	autoplaySpeed: 3000,
+	dots: true,
+	//prevArrow: ".site-slider .slider-btn .prev",
+	//nextArrow: ".site-slider .slider-btn .next"
+});
