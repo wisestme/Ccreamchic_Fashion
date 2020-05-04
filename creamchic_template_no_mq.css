@@ -98,12 +98,6 @@ svg {
 	fill: var(--accent);
 }
 
-header a {
-	color: var(--accent);
-	text-decoration: none;
-	font-size: 1.2em;
-}
-
 .hide_small {
 	display: none;
 }
@@ -271,7 +265,7 @@ footer {
 	width: 100vw;
 	position: fixed;
 	top: 0;
-	right: -100vw;
+	right: 0;
 	background: var(--primary-color);
 	transition: 0.5s ease;
 }
@@ -321,29 +315,4 @@ footer {
 
 .test {
 	border: 2px solid red;
-}
-
-
-/*MEDIA QUERIES*/
-@media screen and (min-width: 700px) {
-	.show_small {
-		display: none;
-	}
-
-	.hide_small {
-		display: inline;
-	}
-
-	header li {
-		display: inline;
-		margin-left: 2em;
-
-	}
-
-	header ul {
-		float: right;
-		margin: 0 2em 2em 0;
-		position: relative;
-		bottom: 1.5em;
-	}
 }
