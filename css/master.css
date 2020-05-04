@@ -372,6 +372,14 @@ footer {
 	.footer_menu > .container {
 		justify-content: space-around;
 	}
+
+	.prev {
+	left: 4em;
+	}
+
+	.next {
+		right: 4em;
+	}
 }
 
 /*Slider One*/
@@ -395,4 +403,11 @@ main > .container {
 
 .next {
 	float: right;
+	
+}
+
+
+.slider_one img {
+	width: 90%;
+	max-width: 500px;
 }
