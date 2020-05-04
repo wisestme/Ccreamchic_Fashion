@@ -164,10 +164,12 @@ input {
 .info > div {
 	width: 98%;
 	margin: 1em auto 2em auto;
+
 }
 
 video {
 	width: 90%;
+	max-width: 400px;
 	align-self: center;
 }
 
@@ -187,6 +189,7 @@ video {
 .footer_menu {
 	background: var(--primary-color);
 	color: var(--header-main);
+	padding: 2em 0 0 0;
 	border-bottom: 1px solid var(--accent);
 }
 
@@ -194,7 +197,7 @@ video {
 	color: var(--accent);
 }
 
-.footer_menu > div {
+.footer_menu > .container > div {
 	margin-bottom: 2em;
 	font-size: 1.3em;
 	padding: 0 2em;
@@ -349,5 +352,18 @@ footer {
 
 	.subscribe {
 		padding: 1em 2em;
+	}
+
+	.col_small {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.info > div {
+		width: 45%;
+	}
+
+	.footer_menu > .container {
+		justify-content: space-around;
 	}
 }
