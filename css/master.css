@@ -37,6 +37,10 @@ body {
 	display: grid;
 }
 
+.clear {
+	clear: both;
+}
+
 header {
 	background: var(--primary-color);
 	padding: 2em 0;
@@ -277,9 +281,10 @@ footer {
 }
 
 .hamburger_close {
-	position: relative;
-	right: -400px;
-	bottom: 20px;
+	position: absolute;
+	right: 2em;
+	top: 20px;
+	/*float: right;*/
 }
 
 .hamburger_modal > .social {

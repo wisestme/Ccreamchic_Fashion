@@ -26,7 +26,7 @@ hamburgerIcon.addEventListener('click', () => {
 });
 
 hamburgerCloseIcon.addEventListener('click', () => {
-	hamburgerModal.style.right = '-500px';
-	overlay.style.right = '-500px';
+	hamburgerModal.style.right = '-100vw';
+	overlay.style.right = '-100vw';
 	phoneIcon.style.display = 'flex';
 });
