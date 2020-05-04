@@ -373,3 +373,26 @@ footer {
 		justify-content: space-around;
 	}
 }
+
+/*Slider One*/
+main > .container {
+	padding: 0 2em;
+}
+.slider_item > div:first-child {
+	flex-direction: column;
+}
+.slider_item > div {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider_one_btn > span {
+	position: relative;
+	top: -50vh;
+}
+
+.next {
+	float: right;
+}
