@@ -361,6 +361,9 @@ footer {
 
 	.info > div {
 		width: 45%;
+		max-width: 300px;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.footer_menu > .container {
