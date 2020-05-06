@@ -339,8 +339,7 @@ main > .container {
 .slider_item > div {
 	
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	
 }
 
 .slider_one_btn > span {
@@ -413,13 +412,18 @@ main > .container {
 	.footer_menu > .container {
 		justify-content: space-around;
 	}
-
+	
 	.prev {
 	left: 4em;
 	}
 
 	.next {
 		right: 4em;
+	}
+
+	.slider_one {
+		display: flex;
+		align-items: center;
 	}
 
 	.slider_one_btn > span {
@@ -452,5 +456,12 @@ main > .container {
 
 	.slider_item {
 		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.slider_item > div:first-child {
+		margin-right: 2em;
 	}
 }
