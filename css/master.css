@@ -345,7 +345,7 @@ main > .container {
 
 .slider_one_btn > span {
 	position: relative;
-	top: -35vh;
+	top: -13em;
 }
 
 .next {
@@ -423,7 +423,7 @@ main > .container {
 	}
 
 	.slider_one_btn > span {
-	top: -45vh;
+	top: -30vh;
 	}
 
 	.footer_menu > .container > div{
@@ -436,5 +436,21 @@ main > .container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+
+	.slider_one_btn > span {
+	top: -20vh;
+	}
+
+	.prev {
+	left: 0;
+	}
+
+	.next {
+		right: 0;
+	}
+
+	.slider_item {
+		display: flex;
 	}
 }
