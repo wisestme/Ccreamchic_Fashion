@@ -44,12 +44,14 @@ $('.slider_one')
 
 //$('.slider_one').slick();
 
+// CATEGORY SLIDER
 $('.categories_slider')
 	.not('slick-initialized')
 	.slick({
 	autoplay: true,
 	autoplaySpeed: 3000,
 	slidesToShow: 6,
+	slidesToScroll:3,
 	dots: true,
 	prevArrow: ".prev",
 	nextArrow: ".next",
@@ -71,7 +73,8 @@ $('.categories_slider')
 		{
 			breakpoint: 950,
 			settings: {
-				slidesToShow:4
+				slidesToShow:4,
+				slidesToScroll:2
 			}
 		}
 	]
