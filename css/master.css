@@ -376,12 +376,6 @@ main > .container {
 }
 
 /*SLIDER TWO*/
-.slides_two {
-	border: 2px solid red;
-	justify-content: flex-end;
-	flex-wrap: wrap;
-}
-
 .category img {
 	margin-left: auto;
 	margin-right: auto;
