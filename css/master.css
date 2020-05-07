@@ -333,13 +333,23 @@ footer {
 main > .container {
 	padding: 0 2em;
 }
+
+.slider_item {
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
 .slider_item > div:first-child {
 	flex-direction: column;
 }
-.slider_item > div {
-	
+
+.slider_item > div {	
 	display: flex;
-	
+}
+
+.slider_item > div:last-child {	
+	justify-content: center;
 }
 
 .slider_one_btn > span {
@@ -348,10 +358,8 @@ main > .container {
 }
 
 .next {
-	float: right;
-	
+	float: right;	
 }
-
 
 .slider_one img {
 	width: 90%;
