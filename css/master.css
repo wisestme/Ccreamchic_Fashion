@@ -366,6 +366,11 @@ main > .container {
 	max-width: 500px;
 }
 
+.category > img {
+	width: 90%;
+	max-width: 250px;
+}
+
 .footer_menu > .container > div{
 	padding-left: 20vw;
 }

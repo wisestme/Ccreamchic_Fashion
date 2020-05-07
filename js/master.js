@@ -43,3 +43,36 @@ $('.slider_one')
 });
 
 //$('.slider_one').slick();
+
+$('.categories_slider')
+	.not('slick-initialized')
+	.slick({
+	autoplay: true,
+	autoplaySpeed: 3000,
+	slidesToShow: 6,
+	dots: true,
+	prevArrow: ".prev",
+	nextArrow: ".next",
+	responsive: [
+		{
+			breakpoint: 550,
+			settings: {
+				slidesToShow:2,
+				slidesToScroll:1
+			}
+		},
+		{
+			breakpoint: 750,
+			settings: {
+				slidesToShow:3,
+				slidesToScroll:1
+			}
+		},
+		{
+			breakpoint: 950,
+			settings: {
+				slidesToShow:4
+			}
+		}
+	]
+});
