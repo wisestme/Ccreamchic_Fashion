@@ -346,10 +346,8 @@ main > .container {
 
 .slider_item > div {	
 	display: flex;
-}
-
-.slider_item > div:last-child {	
 	justify-content: center;
+	text-align: center;
 }
 
 .slider_one_btn > span {
