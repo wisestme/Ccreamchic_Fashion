@@ -581,6 +581,21 @@ main > .container {
  /* column-gap: 15px;
   column-fill: auto;*/
 }
+
+.one {
+  /*height: 220px;*/
+  height: 25vw;
+}
+
+.two {
+  /*height: 240px;*/
+  height: 27vw;
+}
+
+.three {
+  /*height: 260px;*/
+  height: 29vw;
+}
 }
 
 @media screen and (min-width: 1050px) {
