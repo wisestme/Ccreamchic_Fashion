@@ -79,3 +79,5 @@ $('.categories_slider')
 		}
 	]
 });
+
+	// Magnyfying Glass
