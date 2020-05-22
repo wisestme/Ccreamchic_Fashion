@@ -102,3 +102,19 @@ console.log(zoomerSource);
     // console.log(e.currentTarget);
    })
  }
+
+// EXPAND SELECTED PRODUCT
+let galleryProducts = document.querySelectorAll('.gallery_product');
+var expandProductModal = document.getElementById('view_product');
+var getSelectedProduct = document.getElementById('selected_product');
+
+for (product of galleryProducts) {
+	product.addEventListener('click', function() {
+		console.log('product clicked');
+		console.log(this.id, typeof(this.id));
+		var linkImage = document.getElementById(this.id);
+		console.log(linkImage);
+		expandProductModal.style.display = 'block';
+		getSelectedProduct.src = './images/cream'+this.id+'.jpg';
+	})
+}
