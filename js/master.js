@@ -53,8 +53,8 @@ $('.categories_slider')
 	slidesToShow: 6,
 	slidesToScroll:3,
 	dots: true,
-	prevArrow: ".prev",
-	nextArrow: ".next",
+	prevArrow: ".cat_prev",
+	nextArrow: ".cat_next",
 	responsive: [
 		{
 			breakpoint: 550,
