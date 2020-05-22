@@ -93,10 +93,10 @@ for(let zoomImage of zoomImages) {
   x = offsetX/zoomer.offsetWidth*100
   y = offsetY/zoomer.offsetHeight*100
   zoomer.style.backgroundPosition = x + '% ' + y + '%';
-console.log(zoomer.childNodes[1]);
-console.log(zoomer);
+// console.log(zoomer.childNodes[1]);
+// console.log(zoomer);
 let zoomerSource = zoomer.childNodes[1].getAttribute('src');
-console.log(zoomerSource);
+//console.log(zoomerSource);
 
   zoomer.style.backgroundImage = `url(${zoomerSource})`;
     // console.log(e.currentTarget);
@@ -110,8 +110,8 @@ var getSelectedProduct = document.getElementById('selected_product');
 
 for (product of galleryProducts) {
 	product.addEventListener('click', function() {
-		console.log('product clicked');
-		console.log(this.id, typeof(this.id));
+		//console.log('product clicked');
+		//console.log(this.id, typeof(this.id));
 		var linkImage = document.getElementById(this.id);
 		console.log(linkImage);
 		expandProductModal.style.display = 'block';
