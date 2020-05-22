@@ -657,6 +657,12 @@ figure.product img {
 	transition: 1s ease;
 }
 
+#expand_product svg {
+	position: absolute;
+	right: 2em;
+	top: 1em;
+}
+
 #view_product {
 	width: 90%;
 	height: 90vh;

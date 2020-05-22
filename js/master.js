@@ -109,6 +109,8 @@ var expandProductModal = document.getElementById('view_product');
 var getSelectedProduct = document.getElementById('selected_product');
 var getModalOverlay = document.getElementById('overlay_expanded');
 var getModalContainer = document.getElementById('expand_product');
+var closeModal = document.getElementById('close_modal');
+
 
 
 // DISPLAY CLICKED PRODUCT
@@ -127,7 +129,7 @@ for (product of galleryProducts) {
 
 // REMOVE DISPLAYED PRODUCT
 // AND SHOW PREVIOUS SCREEN
-getModalContainer.addEventListener('click', function() {
+closeModal.addEventListener('click', function() {
 	getModalOverlay.style.top = '-100vh';
 	getModalContainer.style.top = '-100vh';
 })
