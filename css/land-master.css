@@ -1,0 +1,70 @@
+body {
+	background-color: #192021;
+	text-align: center;
+	background-image: url(../images/creamchic_makeup.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	margin: 0;
+	color: #fff;
+	font-family: verdana;
+}
+
+header {
+	padding: 1em;
+
+}
+
+img {
+	float: left;
+	border-radius: 50%;
+	width: 20%;
+}
+
+.clear {
+	clear: both;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.stores {
+	
+
+}
+
+section > * {
+	margin-top: 5em;
+}
+
+.overlay {
+	background-color: #000;
+	margin: 0;
+	height: 100vh;
+	opacity: 0.8;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.stores > div:first-child {
+	border-right: 2px solid #d21154;
+	
+}
+
+.stores > div {
+	width: 50%;
+}
