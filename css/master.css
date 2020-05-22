@@ -645,7 +645,7 @@ figure.product img {
 	opacity: 0.8;
 	position: fixed;
 	top: -100vh;
-	left: 0;
+	transition: 1s ease;
 }
 
 #expand_product {
@@ -654,6 +654,7 @@ figure.product img {
 	z-index: 2;
 	position: fixed;
 	top: -100vh;
+	transition: 1s ease;
 }
 
 #view_product {

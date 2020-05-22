@@ -107,6 +107,10 @@ let zoomerSource = zoomer.childNodes[1].getAttribute('src');
 let galleryProducts = document.querySelectorAll('.gallery_product');
 var expandProductModal = document.getElementById('view_product');
 var getSelectedProduct = document.getElementById('selected_product');
+var getModalOverlay = document.getElementById('overlay_expanded');
+var getModalContainer = document.getElementById('expand_product');
+
+
 
 for (product of galleryProducts) {
 	product.addEventListener('click', function() {
@@ -116,5 +120,7 @@ for (product of galleryProducts) {
 		console.log(linkImage);
 		expandProductModal.style.display = 'block';
 		getSelectedProduct.src = './images/cream'+this.id+'.jpg';
+		getModalOverlay.style.top = 0;
+		getModalContainer.style.top = 0;
 	})
 }
