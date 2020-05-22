@@ -111,7 +111,7 @@ var getModalOverlay = document.getElementById('overlay_expanded');
 var getModalContainer = document.getElementById('expand_product');
 
 
-
+// DISPLAY CLICKED PRODUCT
 for (product of galleryProducts) {
 	product.addEventListener('click', function() {
 		//console.log('product clicked');
@@ -124,3 +124,10 @@ for (product of galleryProducts) {
 		getModalContainer.style.top = 0;
 	})
 }
+
+// REMOVE DISPLAYED PRODUCT
+// AND SHOW PREVIOUS SCREEN
+getModalContainer.addEventListener('click', function() {
+	getModalOverlay.style.top = '-100vh';
+	getModalContainer.style.top = '-100vh';
+})
