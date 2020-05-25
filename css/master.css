@@ -673,11 +673,15 @@ figure.product img {
 	margin: 4em auto;
 	background: #000;
 	border: 2px solid red;
+	text-align: center;
 }
 
 #view_product img {
 	width: 90%;
-	margin-right: 50px;
-	margin-left: 50px;
 	max-width: 500px;
+}
+
+#view_product h2{
+	color: #fff;
+	z-index: 4;
 }

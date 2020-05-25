@@ -110,12 +110,14 @@ var getSelectedProduct = document.getElementById('selected_product');
 var getModalOverlay = document.getElementById('overlay_expanded');
 var getModalContainer = document.getElementById('expand_product');
 var closeModal = document.getElementById('close_modal');
+var holdProductName = document.getElementById('product_name');
 
 
 
 // DISPLAY CLICKED PRODUCT
 for (product of galleryProducts) {
 	product.addEventListener('click', function() {
+		var productName = 'Avon ' + this.getAttribute('name');
 		//console.log('product clicked');
 		//console.log(this.id, typeof(this.id));
 		var linkImage = document.getElementById(this.id);
@@ -124,6 +126,7 @@ for (product of galleryProducts) {
 		getSelectedProduct.src = './images/cream'+this.id+'.jpg';
 		getModalOverlay.style.top = 0;
 		getModalContainer.style.top = 0;
+		holdProductName.textContent = productName;
 	})
 }
 
