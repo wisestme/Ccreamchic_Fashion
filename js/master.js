@@ -120,7 +120,7 @@ for (product of galleryProducts) {
 		//console.log(this.id, typeof(this.id));
 		var linkImage = document.getElementById(this.id);
 		console.log(linkImage);
-		expandProductModal.style.display = 'block';
+		expandProductModal.style.display = 'flex';
 		getSelectedProduct.src = './images/cream'+this.id+'.jpg';
 		getModalOverlay.style.top = 0;
 		getModalContainer.style.top = 0;
