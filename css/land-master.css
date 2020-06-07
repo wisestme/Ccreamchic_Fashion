@@ -98,3 +98,18 @@ a {
 .stores > div {
 	width: 50%;
 }
+
+/* media Queries */
+@media screen and (min-width: 900px) {
+	h1 {
+	font-size: 80px;
+	line-height: 60px;
+	letter-spacing: 7px;
+}
+
+	.stores {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 900px;
+	}
+}
