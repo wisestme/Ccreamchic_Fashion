@@ -5,6 +5,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 :root {
 	--primary-color: #0e1c36;
 	--accent: #e31d5a;
