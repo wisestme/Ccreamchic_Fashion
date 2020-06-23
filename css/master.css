@@ -68,6 +68,7 @@ h1 {
 
 h2 {
 	font-family: sofia, sans-serif;
+	/*font-family: gugi, sans-serif;*/
 }
 
 h1,h2 {
@@ -464,6 +465,14 @@ main > .container {
 	.grid_small {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+	}
+	
+	.slider_one,
+	.slider_one > div {
+		width: 100%;
+	}
+	.slider_item > div {
+		width: 47%;
 	}
 
 	.info > div {
