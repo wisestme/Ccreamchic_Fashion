@@ -387,6 +387,26 @@ main > .container {
 	text-align: center;
 }
 
+.slider_item h2 {
+	margin-bottom: 0.5em;
+}
+
+.slider_item p {
+	margin-bottom: 1em;
+}
+
+.slider_product {
+	position: relative;
+}
+
+.slider_product p {
+	position: absolute;
+	background: var(--accent);
+	color: var(--header-main);
+	border-radius: 10px;
+	padding: 0.3em 0.5em;
+	box-shadow: 2px 2px 4px #000;
+}
 .slider_one_btn > span {
 	position: relative;
 	top: -13em;
