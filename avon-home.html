@@ -35,13 +35,14 @@
 						<div class="show_small">
 							<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
 						</div>
-						<div class="hide_small">
-							<ul>
-								<li><a href="">Home</a></li>
-								<li><a href="">Categories</a></li>
-								<li><a href="">Blog</a></li>
-								<li><a href="">Contact</a></li>
-							</ul>
+						<div class="hide_small">	
+							<nav>
+								<div id="marker"></div>
+								<a href="avon-home.html">Home</a>
+								<a href="#">Categories</a>
+								<a href="#">Blog</a>
+								<a href="#">Contact</a>
+							</nav>
 						</div>
 					</div>
 					
@@ -103,6 +104,7 @@
 
 				<section id="second_slider">
 					<div class="slider_two container">
+						<h2>Categories</h2>
 						<div class="categories_slider flex slides_two">
 							<div class="category">
 								<img src="./images/cat/cream0007.jpg" alt="Avon True Glimmerstick Eyeliner ">
@@ -396,7 +398,21 @@
 		          </div>
 			</div>
 		</div>
-		
+		<script>
+			var marker = document.querySelector('#marker');
+			var item = document.querySelectorAll('nav a');
+console.log(item);
+			function indicator(e){
+				marker.style.left = e.offsetLeft+"px";
+				marker.style.width = e.offsetWidth+"px";
+			}
+
+			item.forEach(link => {
+				link.addEventListener('active', (e)=>{
+					indicator(e.target);
+				})
+			})
+		</script>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -404,5 +420,6 @@
 		<script src="slick/slick.js"></script>
 
 		<script src="js/master.js"></script>
+		
 	</body>
 </html>

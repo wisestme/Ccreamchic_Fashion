@@ -110,6 +110,23 @@ header a {
 	font-size: 1.2em;
 }
 
+.hide_small nav {
+	position: relative;
+	width: 17%;
+	padding: 0.2em;
+}
+
+#marker {
+	position: absolute;
+	left: 0;
+	height: 4px;
+	width: 0;
+	background: red;
+	bottom: -8px;
+	transition: 0.5s;
+	border-radius: 4px;
+}
+
 .hide_small {
 	display: none;
 }
@@ -128,6 +145,7 @@ header a {
 	flex-wrap: wrap;
 }
 
+#second_slider,
 #products_gallery {
 	margin-top: 8em;
 }
@@ -421,11 +439,6 @@ main > .container {
 	max-width: 500px;
 }
 
-.category > img {
-	width: 90%;
-	max-width: 250px;
-}
-
 .footer_menu > .container > div{
 	padding-left: 20vw;
 }
@@ -436,9 +449,33 @@ main > .container {
 	margin-right: auto;
 }
 
+#second_slider .category {
+	position: relative;
+}
+.category > img {
+	width: 90%;
+	max-width: 250px;
+}
+
+.category span {
+	position: absolute;
+	bottom: 0.1em;
+	left: 0.7em;
+	background: var(--primary-color);
+	color: var(--accent);
+	padding: 0.3em 0.5em;
+	font-weight: bold;
+	border-radius: 10px 10px 10px 0;
+}
+
 /*Gallery*/
 .wrap_image {
 	padding: 0 0.5em;
+}
+
+.slider_two > h2 {
+	text-align: center;
+	margin-bottom: 1em;
 }
 
 /*MEDIA QUERIES*/
@@ -460,17 +497,16 @@ main > .container {
 		display: inline;
 	}
 
-	header li {
-		display: inline;
-		margin-left: 2em;
-
-	}
-
-	header ul {
+	header nav {
 		float: right;
-		margin: 0 2em 2em 0;
+		margin: 0 10em 2em 0;
 		position: relative;
 		bottom: 1.5em;
+		display: flex;
+	}
+
+	header nav a {
+		margin-right: 1em;
 	}
 
 	.subscribe {
