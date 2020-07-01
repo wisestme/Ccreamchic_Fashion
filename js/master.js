@@ -111,6 +111,7 @@ var getModalOverlay = document.getElementById('overlay_expanded');
 var getModalContainer = document.getElementById('expand_product');
 var closeModal = document.getElementById('close_modal');
 var holdProductName = document.getElementById('product_name');
+var premiumProducts = document.querySelectorAll('.premium');
 
 
 
@@ -127,6 +128,17 @@ for (product of galleryProducts) {
 		getModalOverlay.style.top = 0;
 		getModalContainer.style.top = 0;
 		holdProductName.textContent = productName;
+	})
+}
+
+for (premium of premiumProducts) {
+	premium.addEventListener('click', function() {
+		var premiumName = 'Avon' + this.getAttribute('name');
+
+		getSelectedProduct.src = './images/premium/cream'+this.id+'.jpg';
+		getModalOverlay.style.top = 0;
+		getModalContainer.style.top = 0;
+		holdProductName.textContent = premiumName;
 	})
 }
 

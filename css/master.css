@@ -116,6 +116,7 @@ header a {
 	padding: 0.2em;
 }
 
+/* REMEMBER TO REMOVE MARKER STYLE AND SCRIPT*/
 #marker {
 	position: absolute;
 	left: 0;
@@ -460,7 +461,7 @@ main > .container {
 .category span {
 	position: absolute;
 	bottom: 0.1em;
-	left: 0.7em;
+	left: 0.8em;
 	background: var(--primary-color);
 	color: var(--accent);
 	padding: 0.3em 0.5em;
