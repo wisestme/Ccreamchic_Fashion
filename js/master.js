@@ -134,7 +134,8 @@ for (product of galleryProducts) {
 for (premium of premiumProducts) {
 	premium.addEventListener('click', function() {
 		var premiumName = 'Avon' + this.getAttribute('name');
-
+		var productID = this.getAttribute('id');
+		console.log(productID);
 		getSelectedProduct.src = './images/premium/cream'+this.id+'.jpg';
 		getModalOverlay.style.top = 0;
 		getModalContainer.style.top = 0;

@@ -380,6 +380,8 @@ footer {
 	grid-template-columns: 1fr 1fr;
 }
 
+
+
 .test {
 	border: 2px solid red;
 }
@@ -743,6 +745,9 @@ figure.product img {
 	text-align: center;
 }
 
+#view_product > div {
+	width: 50%;
+}
 #view_product img {
 	width: 90%;
 	max-width: 500px;
@@ -751,4 +756,8 @@ figure.product img {
 #view_product h2{
 	color: #fff;
 	z-index: 4;
+}
+
+.description {
+	color: #fff;
 }
