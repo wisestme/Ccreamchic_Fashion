@@ -746,7 +746,7 @@ figure.product img {
 }
 
 #view_product > div {
-	width: 50%;
+	width: 90%;
 }
 #view_product img {
 	width: 90%;
@@ -758,6 +758,26 @@ figure.product img {
 	z-index: 4;
 }
 
-.description {
+.modal_details {
 	color: #fff;
+}
+
+.modal_details p {
+	margin-bottom: 1.5em;
+}
+
+/* Expanded view media queries */
+@media screen and (max-width: 850px) {
+	#view_product {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.details {
+		display: none;
+	}
 }

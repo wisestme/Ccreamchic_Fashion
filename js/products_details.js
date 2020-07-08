@@ -35,6 +35,8 @@ galleryProducts = document.querySelectorAll('.gallery_product');
 var premiumProducts = document.querySelectorAll('.premium');
 
 var getProductDescription = document.querySelector('.description');
+var getProductDetails = document.querySelector('.details');
+
 
 
 
@@ -46,13 +48,20 @@ for (premium of premiumProducts) {
 		var productID = this.getAttribute('id');
 		console.log(typeof productID);
 
-		//add product description to modal
+		//get  clicked product 
 		var clickedObject = products.filter(product => {
 			return product.id === productID;
 		})
 		console.log(clickedObject[0].description);
+
+		// add description to modal
 		var productDescription = clickedObject[0].description;
 		getProductDescription.textContent = productDescription;
+
+		// add details to modal
+		var productDetails = clickedObject[0].details;
+		getProductDetails.textContent = productDetails;
+		console.log(productDetails)
 
 		getSelectedProduct.src = './images/premium/cream'+this.id+'.jpg';
 		getModalOverlay.style.top = 0;
