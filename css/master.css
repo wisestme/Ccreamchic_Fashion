@@ -781,3 +781,42 @@ figure.product img {
 		display: none;
 	}
 }
+
+/* Contact Page*/
+#contact form {
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#contact .wrapper {
+	width: 90%;
+	max-width: 350px;
+}
+
+h2 {
+	line-height: 1.2em;
+	margin-bottom: 1em;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input,
+textarea {
+	width: 100%;
+	margin-bottom: 2em;
+	border-radius: 0.5em;
+}
+
+figure {
+	display: none;
+}
+
+.submit {
+	width: 40%;
+	align-self: flex-end;
+	margin-right: 2.9em;
+}
