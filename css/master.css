@@ -791,7 +791,7 @@ figure.product img {
 
 #contact .wrapper {
 	width: 90%;
-	max-width: 350px;
+	
 }
 
 h2 {
@@ -809,14 +809,65 @@ textarea {
 	width: 100%;
 	margin-bottom: 2em;
 	border-radius: 0.5em;
+	box-shadow: 2px 2px 4px #555;
 }
 
-figure {
+#contact figure {
 	display: none;
+}
+
+input[type=submit] {
+	font-weight: bolder;
+	border: transparent;
+	box-shadow: 2px 2px 4px var(--accent)
 }
 
 .submit {
 	width: 40%;
-	align-self: flex-end;
-	margin-right: 2.9em;
+	align-self: center;
+	max-width: 200px;
+}
+
+/* media queries for contact */
+@media screen and (min-width: 850px) {
+	#contact .container {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+	
+	#contact figure {
+	display: inline;
+	width: 50%;
+	}
+
+	#contact img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#contact form .wrapper {
+		width: 90%;
+	}
+	form .wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	#contact figure {
+	width: 30%;
+	}
+
+	form .wrapper > div {
+	width: 46%;	
+}
+}
+
+@media screen and (max-width: 1000px) {
+	#contact .wrapper {
+	
+	max-width: 350px;
+}
 }
