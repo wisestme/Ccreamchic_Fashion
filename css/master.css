@@ -499,6 +499,16 @@ main > .container {
 	margin-right: 5vw;
 }
 }
+
+@media screen and (max-width: 550px) {
+	#upper_header > img {
+	margin-left: 0.5em;
+}
+
+	h1 {
+		align-self: flex-end;
+	}
+}
 @media screen and (min-width: 700px) {
 	#upper_header {
 		width: 18%;
@@ -507,10 +517,11 @@ main > .container {
 	#lower_header {
 		width: 48%
 	}
+
 	#header_container h1 {
 		text-align: center;
-		flex-grow: 4;
 	}
+
 	#upper_header > img {
 		margin-left: 1em;
 		margin-right: 8vw;
