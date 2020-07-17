@@ -50,6 +50,7 @@ header {
 	height: 25vh;
 }
 
+
 #upper_header {
 	justify-content: flex-start;
 }
@@ -483,13 +484,35 @@ main > .container {
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 550px) {
+	/*#header_container {
+		flex-direction: column-reverse;
+	}*/
+	#header_container h1 {
+		align-self: flex-end;
+	}
+	#header_container {
+		
+	}
+
+	
 	#upper_header > img {
 	margin-right: 5vw;
 }
 }
 @media screen and (min-width: 700px) {
+	#upper_header {
+		width: 18%;
+	}
+
+	#lower_header {
+		width: 48%
+	}
+	#header_container h1 {
+		text-align: center;
+		flex-grow: 4;
+	}
 	#upper_header > img {
-		margin-left: 2em;
+		margin-left: 1em;
 		margin-right: 8vw;
 }
 	.show_small {
@@ -501,10 +524,11 @@ main > .container {
 	}
 
 	header nav {
-		float: right;
+		/*float: right;*/
 		margin: 0 10em 2em 0;
 		position: relative;
-		bottom: 1.5em;
+		top: 6em;
+		/*right: 2em;*/
 		display: flex;
 	}
 
@@ -612,11 +636,21 @@ main > .container {
 
 }
 
+@media screen and (max-width: 700px) {
+	#header_container {
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
 @media screen and (min-width: 900px) {
 	#upper_header > img {
 	margin-right: 15vw;
 	/*margin-left: 5em;*/
 }
+	#lower_header {
+		width: 40%;
+	}
 	.footer_menu > div {
 		display: flex;
 		flex-direction: row;
@@ -741,7 +775,7 @@ figure.product img {
 	height: 85vh;
 	margin: 4em auto;
 	background: #000;
-	border: 2px solid red;
+	
 	text-align: center;
 }
 
