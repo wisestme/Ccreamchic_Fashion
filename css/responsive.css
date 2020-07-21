@@ -185,11 +185,11 @@
 		flex-direction: column;
 	}
 
-	.slider_product figure {
+	/*.slider_product figure {
 		text-align: center;
 		display: flex;
 		justify-content: center;
-	}
+	}*/
 
 	figcaption {
 		display: none;

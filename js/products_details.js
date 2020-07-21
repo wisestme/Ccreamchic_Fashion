@@ -21,6 +21,22 @@ let products = [
 		'price': 23280,
 		'description': 'Product 3.',
 		'details': 'Can be bought as a Combo or individually. Suitable for All Skin Types'
+	},
+
+	{
+		'id': '0004',
+		'name': 'Black Suede',
+		'price': 23280,
+		'description': 'Nodescription yet',
+		'details': 'No details yet'
+	},
+
+	{
+		'id': '0005',
+		'name': 'Avon Care Hand Creams',
+		'price': 1200,
+		'description': 'Our Collection of Handcreams ranges from Intense Hydration to Anti ageing. ',
+		'details': 'Smells nice, 75ml each. Suitable for All Skin Types. '
 	}
 ]
 
@@ -85,6 +101,21 @@ for (product of galleryProducts) {
 		getModalOverlay.style.top = 0;
 		getModalContainer.style.top = 0;
 		holdProductName.textContent = productName;
+
+		//get  clicked product
+		var productID = this.getAttribute('id');
+		var clickedObject = products.filter(product => {
+			return product.id === productID;
+		})
+		console.log(clickedObject[0].description);
+		// add description to modal
+		var productDescription = clickedObject[0].description;
+		getProductDescription.textContent = productDescription;
+
+		// add details to modal
+		var productDetails = clickedObject[0].details;
+		getProductDetails.textContent = productDetails;
+		console.log(productDetails)
 	})
 }
 // function Product(id, name, price, description, details) {

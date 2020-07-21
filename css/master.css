@@ -482,80 +482,19 @@ main > .container {
 	margin-bottom: 1em;
 }
 
+.slider_product figure {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+
 /*MEDIA QUERIES*/
 
 
 
 
 
-@media screen and (min-width: 900px) {
-	#lower_header nav {
-		left: 2em;
-	}
-	#upper_header > img {
-	margin-right: 15vw;
-	/*margin-left: 5em;*/
-}
-	#lower_header {
-		width: 40%;
-	}
 
-	.footer_menu > div {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.slider_one_btn > span {
-	top: -20vh;
-	}
-
-	.prev {
-	left: 0;
-	}
-
-	.next {
-		right: 0;
-	}
-
-	.slider_item {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-	}
-
-	.slider_item > div:first-child {
-		margin-right: 2em;
-	}
-	
-	.waterfall_grid {
-  -webkit-column-count: 4;
-/*  -webkit-column-gap: 10px;
-  -webkit-column-fill: auto;*/
-  -moz-column-count: 4;
-/*  -moz-column-gap: 10px;
-  -moz-column-fill: auto;*/
-  column-count: 4;
- /* column-gap: 15px;
-  column-fill: auto;*/
-}
-
-.one {
-  /*height: 220px;*/
-  height: 25vw;
-}
-
-.two {
-  /*height: 240px;*/
-  height: 27vw;
-}
-
-.three {
-  /*height: 260px;*/
-  height: 29vw;
-}
-}
 
 @media screen and (min-width: 1050px) {
 	#header_container h1{
