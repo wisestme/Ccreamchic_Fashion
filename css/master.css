@@ -197,7 +197,7 @@ footer {
 	margin-top: 2em;
 }
 
-.subscribe input:first-child{
+.subscribe input:last-child{
 	width: 250px;
 
 }
