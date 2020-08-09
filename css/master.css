@@ -705,3 +705,36 @@ input[type=submit] {
 	max-width: 350px;
 }
 }
+
+/* Show and Hide on Scroll */
+/*.scroll_show {
+	display: block;
+}
+
+.scroll_hide {
+	display: none;
+}*/
+
+#categories {
+	position: relative;
+	display: none;
+}
+.categories_banner {
+	display: flex;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	background: var(--primary-color);
+	width: 100%;
+	padding: 0.5em;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.categories_banner a {
+	text-decoration: none;
+	margin: 0.5em 1em;
+	color: #fff;
+}
