@@ -9,17 +9,17 @@ let products = [
 
 	{
 		'id': '0002',
-		'name': 'Anew Vitamin C Glow Set',
-		'price': 23280,
-		'description': 'Product 2',
-		'details': 'Can be bought as a Combo or individually. Suitable for All Skin Types'
+		'name': 'Matte Legend Lipstick',
+		'price': 3900,
+		'description': 'Pigment-Packed Pro Bullet for sculpted Lips',
+		'details': 'No Liner or Brush needed. 3 in 1 Primer, Pigment and Precision.'
 	},
 
 	{
 		'id': '0003',
-		'name': 'Anew Vitamin C Glow Set',
-		'price': 23280,
-		'description': 'Product 3.',
+		'name': 'MAN SET',
+		'price': 11500,
+		'description': 'Avon Man Eau de Toilette is a conspicuously masculine fragrance that will give you self-confidence at any time of the day.',
 		'details': 'Can be bought as a Combo or individually. Suitable for All Skin Types'
 	},
 
@@ -197,6 +197,7 @@ var premiumProducts = document.querySelectorAll('.premium');
 
 var getProductDescription = document.querySelector('.description');
 var getProductDetails = document.querySelector('.details');
+var getProductPrice = document.querySelector('.price');
 
 
 
@@ -224,14 +225,21 @@ for (premium of premiumProducts) {
 		getProductDetails.textContent = productDetails;
 		console.log(productDetails)
 
+		// add price to modal
+		var productPrice = clickedObject[0].price;
+		productPriceMoney = function(priceOfProduct) {
+			return '#' + productPrice.toLocaleString('en-US');
+		}
+
+		getProductPrice.textContent = productPriceMoney(productPrice);
+		//console.log(getProductPrice, productPrice);
+
 		getSelectedProduct.src = './images/premium/cream'+this.id+'.jpg';
 		getModalOverlay.style.top = 0;
 		getModalContainer.style.top = 0;
 		holdProductName.textContent = premiumName;
 	})
 }
-
-
 
 
 for (product of galleryProducts) {
@@ -262,6 +270,8 @@ for (product of galleryProducts) {
 		getProductDetails.textContent = productDetails;
 		console.log(productDetails)
 	})
+
+
 }
 // function Product(id, name, price, description, details) {
 // 	this.id = id;

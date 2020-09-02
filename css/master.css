@@ -44,6 +44,11 @@ body {
 	clear: both;
 }
 
+.price {
+	
+	color: white;
+}
+
 header {
 	background: var(--primary-color);
 	padding: 2em 0;
@@ -161,7 +166,7 @@ header a {
 	max-width: 300px;
 	height: 40vw;
 	background: var(--accent);
-	margin: 2em auto;
+	margin: 3em auto;
 }
 
 .gallery_product img {
@@ -186,6 +191,10 @@ footer {
 	color: var(--header-main);
 	text-align: center;
 }
+
+.subscribe h2 {
+	margin-bottom: 0;
+}
 .subscribe > div {
 	align-items: center;
 	justify-content: center;
@@ -197,9 +206,13 @@ footer {
 	margin-top: 2em;
 }
 
+.subscribe input {
+	max-width: 500px;
+}
+
 .subscribe input:last-child{
 	width: 250px;
-
+	margin-left: 0.5em;
 }
 
 input[type=submit] {
@@ -719,7 +732,7 @@ input[type=submit] {
 	position: relative;
 	display: none;
 }
-.categories_banner {
+.categories_banner ul{
 	display: flex;
 	position: fixed;
 	top: 0px;
@@ -733,8 +746,8 @@ input[type=submit] {
 	text-align: center;
 }
 
-.categories_banner a {
-	text-decoration: none;
+.categories_banner li {
 	margin: 0.5em 1em;
 	color: #fff;
+	list-style: none;
 }
