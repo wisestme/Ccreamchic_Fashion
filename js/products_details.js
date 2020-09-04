@@ -198,10 +198,22 @@ var premiumProducts = document.querySelectorAll('.premium');
 var getProductDescription = document.querySelector('.description');
 var getProductDetails = document.querySelector('.details');
 var getProductPrice = document.querySelector('.price');
+var getAllProductCost = document.querySelectorAll('.cost');
+var getSliderProducts = document.querySelectorAll('.slider_product');
 
+for (productCost of getAllProductCost) {
+	var getProductId = productCost.parentNode.childNodes[3];
+	//console.log(getProductId);
+	var productId = parseInt(getProductId.getAttribute('id'));
+	console.log(productId);
 
+	var matchingProduct = products.filter(matchedProduct => {
+		return matchedProduct.id = productId;
+	})
 
-
+	console.log(matchingProduct[productId].price);
+	productCost.textContent = matchingProduct[productId - 1].price;
+}
 
 // DISPLAY CLICKED PRODUCT
 for (premium of premiumProducts) {
@@ -273,19 +285,3 @@ for (product of galleryProducts) {
 
 
 }
-// function Product(id, name, price, description, details) {
-// 	this.id = id;
-// 	this.name = name;
-// 	this.price = price;
-// 	this.details = details;
-// }
-
-// let anew = new Product(
-// 	'0001',
-// 	'Anew Vitamin C Glow Set',
-// 	23,280,
-// 	'Combine this Triple System and enjoy maximum Results of Radiance and Youthful Glow on your Face.',
-// 	'Can be bought as a Combo or individually. Suitable for All Skin Types'
-// 	);
-
-// console.log(anew.details);
