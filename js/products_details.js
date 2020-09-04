@@ -199,34 +199,40 @@ var getProductDescription = document.querySelector('.description');
 var getProductDetails = document.querySelector('.details');
 var getProductPrice = document.querySelector('.price');
 var getAllProductCost = document.querySelectorAll('.cost');
-var getSliderProducts = document.querySelectorAll('.slider_product');
+//var getSliderProducts = document.querySelectorAll('.slider_product');
 
-for (productCost of getAllProductCost) {
-	var getProductId = productCost.parentNode.childNodes[3];
-	//console.log(getProductId);
-	var productId = parseInt(getProductId.getAttribute('id'));
-	console.log(productId);
+// for (productCost of getAllProductCost) {
+// 	var getProductId = productCost.parentNode.childNodes[3];
+// 	//console.log(getProductId);
+// 	var productId = parseInt(getProductId.getAttribute('id'));
+// 	//console.log(productId);
 
+// 	var matchingProduct = products.filter(matchedProduct => {
+// 		return matchedProduct.id = productId;
+// 	})
+
+// 	//console.log(matchingProduct[productId].price);
+// 	productCost.textContent = matchingProduct[productId - 1].price;
+// }
+
+function filterProductId () {
 	var matchingProduct = products.filter(matchedProduct => {
 		return matchedProduct.id = productId;
 	})
-
-	console.log(matchingProduct[productId].price);
-	productCost.textContent = matchingProduct[productId - 1].price;
 }
 
 // DISPLAY CLICKED PRODUCT
 for (premium of premiumProducts) {
 	premium.addEventListener('click', function() {
-		var premiumName = 'Avon' + this.getAttribute('name');
+		var premiumName = this.getAttribute('name');
 		var productID = this.getAttribute('id');
-		console.log(typeof productID);
+		console.log(productID, product.id);
 
 		//get  clicked product 
 		var clickedObject = products.filter(product => {
-			return product.id === productID;
+			return product.name === premiumName;
 		})
-		console.log(clickedObject[0].description);
+		console.log(clickedObject);
 
 		// add description to modal
 		var productDescription = clickedObject[0].description;
@@ -235,7 +241,7 @@ for (premium of premiumProducts) {
 		// add details to modal
 		var productDetails = clickedObject[0].details;
 		getProductDetails.textContent = productDetails;
-		console.log(productDetails)
+		//console.log(productDetails)
 
 		// add price to modal
 		var productPrice = clickedObject[0].price;
@@ -253,6 +259,22 @@ for (premium of premiumProducts) {
 	})
 }
 
+function displayPremiumProductPrice () {
+	for (productCost of getAllProductCost) {
+	var getProductId = productCost.parentNode.childNodes[3];
+	//console.log(getProductId);
+	var productId = getProductId.getAttribute('id');
+	//console.log(productId);
+
+	var matchingProduct = products.filter(matchedProduct => {
+		return matchedProduct.id = productId;
+	})
+
+	//console.log(matchingProduct[productId].price);
+	productCost.textContent = matchingProduct[productId - 1].price;
+}
+}
+displayPremiumProductPrice ();
 
 for (product of galleryProducts) {
 	product.addEventListener('click', function() {
@@ -268,9 +290,9 @@ for (product of galleryProducts) {
 		holdProductName.textContent = productName;
 
 		//get  clicked product
-		var productID = this.getAttribute('id');
+		var productName = this.getAttribute('name');
 		var clickedObject = products.filter(product => {
-			return product.id === productID;
+			return product.name === productName;
 		})
 		console.log(clickedObject[0].description);
 		// add description to modal
@@ -280,7 +302,7 @@ for (product of galleryProducts) {
 		// add details to modal
 		var productDetails = clickedObject[0].details;
 		getProductDetails.textContent = productDetails;
-		console.log(productDetails)
+		//console.log(productDetails)
 	})
 
 

@@ -82,7 +82,7 @@ $('.categories_slider')
 
 	// Magnyfying Glass idea from codepen
 let zoomImages = document.querySelectorAll('.product');
-console.log(zoomImages);
+//console.log(zoomImages);
 for(let zoomImage of zoomImages) {
    //zoomImage.style.backgroundImage = "url(img/slip001.jpg)";
    let currentImage = zoomImage.childNodes;
