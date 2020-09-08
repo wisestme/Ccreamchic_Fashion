@@ -279,7 +279,9 @@ function displayPremiumProductPrice () {
 	})
 
 	//console.log(matchingProduct[productId].price);
-	productCost.textContent = matchingProduct[productId - 1].price;
+	var priceOfPremiumProduct = matchingProduct[productId - 1].price;
+	var priceOfPremiumProductMoney = priceOfPremiumProduct.toLocaleString('en-US');
+	productCost.textContent = priceOfPremiumProductMoney;
 }
 }
 displayPremiumProductPrice ();
