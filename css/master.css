@@ -511,7 +511,7 @@ main > .container {
 	/* Dynamic class*/
 	figure .cost {
 		color: #fff;
-		/*z-index: 300;*/
+		
 		background: var(--accent);
 		position: relative;
 		top: -0.1em;
@@ -519,6 +519,10 @@ main > .container {
 		padding: 0.5em;
 		border-radius: 5px;
 		box-shadow: 4px 4px 8px #aaa;
+	}
+
+	.caption_price {
+		display: block;
 	}
 
 /*MEDIA QUERIES*/

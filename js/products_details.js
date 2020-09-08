@@ -42,7 +42,7 @@ let products = [
 	{
 		'id': '0006',
 		'name': 'Face Mask Collection',
-		'price': 1200,
+		'price': 1201,
 		'description': 'Choose the Mask that\'s right for your skin and give your skin a treat.',
 		'details': 'Avon Skincare Collection of Face Mask for everyday use.'
 	},
@@ -50,7 +50,7 @@ let products = [
 	{
 		'id': '0007',
 		'name': 'True Glimmerstick Eyeliner',
-		'price': 1200,
+		'price': 1202,
 		'description': 'Make an impact with our array of bold Eyeliners.',
 		'details': 'Creamy and Smooth Glide on. Perfect Precision.'
 	},
@@ -58,7 +58,7 @@ let products = [
 	{
 		'id': '0008',
 		'name': 'True Nourishing Lip Oil',
-		'price': 1200,
+		'price': 1203,
 		'description': 'Non- sticky Lip Oil with a tint of Colour.',
 		'details': ' It promises to lock in 3 times more moisture. Enriched with Jojoba, Avocado and Coconut Oil alongside Vitamin E.'
 	},
@@ -66,7 +66,7 @@ let products = [
 	{
 		'id': '0009',
 		'name': 'Naturals Kids Body Wash',
-		'price': 1200,
+		'price': 1204,
 		'description': 'Gently Cleansing 2 in 1 Bubble Body Wash.',
 		'details': 'Tear Free Foaming 2 in 1.'
 	},
@@ -74,7 +74,7 @@ let products = [
 	{
 		'id': '0010',
 		'name': 'Perfect Wear 8-in-1 Eyeshadow',
-		'price': 1200,
+		'price': 1205,
 		'description': 'Impactful Eye Shadow in beautiful new shades.',
 		'details': 'Has a built in primer for even, smooth application. '
 	},
@@ -82,7 +82,7 @@ let products = [
 	{
 		'id': '0011',
 		'name': 'Planet Spa Ayurveda Set of 3',
-		'price': 1200,
+		'price': 1206,
 		'description': 'Ayurveda Body Butter, Multi-Use Oil and Face Mask to Pamper your Skin.',
 		'details': 'Calming, Exfoliation and Pore-Minimising.'
 	},
@@ -90,7 +90,7 @@ let products = [
 	{
 		'id': '0012',
 		'name': 'Powerstay Concealer',
-		'price': 1200,
+		'price': 1207,
 		'description': 'When you have dark circles and imperfections, concealers can be godsend!',
 		'details': '18 Hours of just applied freshness is at your fingertips. '
 	},
@@ -98,7 +98,7 @@ let products = [
 	{
 		'id': '0013',
 		'name': 'Nutra Effects Soothe Micellar Range',
-		'price': 1200,
+		'price': 1208,
 		'description': 'Flawless looking Skin anyone?',
 		'details': 'Wipe, Gel Cleanser, Micellar Water, Face Cream'
 	},
@@ -106,7 +106,7 @@ let products = [
 	{
 		'id': '0014',
 		'name': 'Bubble Bath Range',
-		'price': 1200,
+		'price': 1209,
 		'description': 'Family Size Bathroom Heroes in 1000ml',
 		'details': '1,000ml'
 	},
@@ -114,7 +114,7 @@ let products = [
 	{
 		'id': '0015',
 		'name': 'Pure Temptation by Tabitha Webb',
-		'price': 1200,
+		'price': 1210,
 		'description': 'A light & feminine fragrance perfect to take you from Day into Night',
 		'details': 'EDT 75ml'
 	},
@@ -122,7 +122,7 @@ let products = [
 	{
 		'id': '0016',
 		'name': 'Skin So Soft',
-		'price': 1200,
+		'price': 1211,
 		'description': 'Original Dry Oil Spray with Jojoba',
 		'details': 'For moisturised, smooth and nourished skin, dry oil spray infused with natural oils 150ml'
 	},
@@ -130,7 +130,7 @@ let products = [
 	{
 		'id': '0017',
 		'name': 'Attraction for Her Essence De Parfum',
-		'price': 1200,
+		'price': 1212,
 		'description': 'Luxury in just 1 Drop. Captured in a luxury gel of upto 200 drops. ',
 		'details': 'EDP 15ml'
 	},
@@ -138,7 +138,7 @@ let products = [
 	{
 		'id': '0018',
 		'name': 'Mesmerize Black For Her Set',
-		'price': 1200,
+		'price': 1213,
 		'description': 'A magically hypnotic cocktail of mandarin and delicious red fruits, rich jasmine, sensual sandalwood and seductive tonka beans.',
 		'details': 'EDT 50ml, Body Lotion 150ml'
 	},
@@ -146,7 +146,7 @@ let products = [
 	{
 		'id': '0019',
 		'name': 'Luck For Him Set',
-		'price': 1200,
+		'price': 1214,
 		'description': 'Want a fragrance for men truly intoxicating? Look no further ',
 		'details': 'EDT 75ml, Body Spray 150ml, Hair & Body Wash 200ml'
 	},
@@ -154,7 +154,7 @@ let products = [
 	{
 		'id': '0020',
 		'name': 'Tahitian Holiday Set',
-		'price': 1200,
+		'price': 1215,
 		'description': 'Love Coconut Scents? Here\'s the Scent of Summer',
 		'details': 'EDT 50ml, Body Mist 150ml'
 	},
@@ -162,7 +162,7 @@ let products = [
 	{
 		'id': '0021',
 		'name': 'Far Away Infinity Set',
-		'price': 1200,
+		'price': 1216,
 		'description': 'How Far can you go to smell Great? Escape to an exotic land with this Set',
 		'details': 'EDP 50ml, Body Lotion 150ml, Purse Spray 10ml'
 	},
@@ -170,7 +170,7 @@ let products = [
 	{
 		'id': '0022',
 		'name': 'Anew Ultimate Skincare Program Kit',
-		'price': 1200,
+		'price': 1217,
 		'description': 'Four Steps to Younger looking Skin in 2 weeks for Age 45-55.',
 		'details': 'Contains a Day Cream, Night Cream, Eye Cream & Serum.'
 	},
@@ -178,9 +178,17 @@ let products = [
 	{
 		'id': '0023',
 		'name': 'Beauty Sleep Pyjamas Set',
-		'price': 1200,
+		'price': 1218,
 		'description': 'Step into the Beauty Sleep like a Queen in these Cotton P.J Set',
 		'details': 'Available in 8-10, 12-14, 16-18(Low Stock)'
+	},
+
+	{
+		'id': '0024',
+		'name': 'Avon Roll-Ons Deodorant',
+		'price': 1218,
+		'description': 'Keeps you fresh All Day Long.',
+		'details': '50ml and suitable for All Skin Types.'
 	}
 	
 ]
@@ -317,8 +325,33 @@ console.log(figuresInGallery);
 
 for(figure of figuresInGallery) {
 	var productCaption = document.createElement("figcaption");
+	var productCaptionPrice = document.createElement("span");
 	productCaption.classList.add('cost');
+	productCaptionPrice.classList.add('caption_price');
 	figure.appendChild(productCaption);
-	productCaption.textContent = 'testing product name and prce';
+	//figure.appendChild(productCaptionPrice);
+
+	
+
+	var galleryProductId = figure.getAttribute('id');
+
+	//console.log(galleryProductId);
+
+	var matchingGalleryProduct = products.filter(matchedGalleryProduct => {
+		return matchedGalleryProduct.id = galleryProductId;	
+	})
+
+	var galleryProductIdNum = parseInt(galleryProductId, 10);
+	var priceOfGalleryProduct = matchingGalleryProduct[galleryProductIdNum - 1].price;
+	priceOfGalleryProduct = priceOfGalleryProduct.toLocaleString('en-US');
+	var nameOfGalleryProduct = matchingGalleryProduct[galleryProductIdNum - 1].name;
+	productCaption.textContent = `${nameOfGalleryProduct}`;
+	productCaption.appendChild(productCaptionPrice);
+
+	productCaptionPrice.textContent = '#' + priceOfGalleryProduct;
+	console.log(productCaptionPrice);
+
+	//console.log(matchingGalleryProduct[galleryProductId]);
+	console.log(typeof galleryProductId, typeof galleryProductIdNum, matchingGalleryProduct[galleryProductIdNum - 1].price);
 }
 
