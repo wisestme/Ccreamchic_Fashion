@@ -215,11 +215,11 @@ var getAllProductCost = document.querySelectorAll('.cost');
 // 	productCost.textContent = matchingProduct[productId - 1].price;
 // }
 
-function filterProductId () {
-	var matchingProduct = products.filter(matchedProduct => {
-		return matchedProduct.id = productId;
-	})
-}
+// function filterProductId () {
+// 	var matchingProduct = products.filter(matchedProduct => {
+// 		return matchedProduct.id = productId;
+// 	})
+// }
 
 // DISPLAY CLICKED PRODUCT
 for (premium of premiumProducts) {
@@ -303,7 +303,22 @@ for (product of galleryProducts) {
 		var productDetails = clickedObject[0].details;
 		getProductDetails.textContent = productDetails;
 		//console.log(productDetails)
+
+		// add price to modal
+		var productPrice = clickedObject[0].price;
+		getProductPrice.textContent = productPrice;
 	})
-
-
 }
+
+// Get figure tags in gallery
+var galleryOfProducts = document.querySelector('#products_gallery');
+var figuresInGallery = galleryOfProducts.querySelectorAll('figure');
+console.log(figuresInGallery);
+
+for(figure of figuresInGallery) {
+	var productCaption = document.createElement("figcaption");
+	productCaption.classList.add('cost');
+	figure.appendChild(productCaption);
+	productCaption.textContent = 'testing product name and prce';
+}
+

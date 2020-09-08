@@ -63,8 +63,7 @@
 		margin-right: 1em;
 	}
 
-	.gallery_product {
-	
+	.gallery_product {	
 	margin: 6em auto;
 }
 
@@ -196,7 +195,7 @@
 		justify-content: center;
 	}*/
 
-	figcaption {
+	.slider_product figcaption {
 		display: none;
 	}
 
