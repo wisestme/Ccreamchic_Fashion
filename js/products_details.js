@@ -318,12 +318,14 @@ for (product of galleryProducts) {
 	})
 }
 
-// Get figure tags in gallery
+function addProductDetails() {
+	// Get figure tags in gallery
 var galleryOfProducts = document.querySelector('#products_gallery');
 var figuresInGallery = galleryOfProducts.querySelectorAll('figure');
 console.log(figuresInGallery);
 
 for(figure of figuresInGallery) {
+	// Dynamically add html tags with classes
 	var productCaption = document.createElement("figcaption");
 	var productCaptionPrice = document.createElement("span");
 	productCaption.classList.add('cost');
@@ -332,10 +334,8 @@ for(figure of figuresInGallery) {
 	//figure.appendChild(productCaptionPrice);
 
 	
-
+	// Use DOM IDs to get JSON properties
 	var galleryProductId = figure.getAttribute('id');
-
-	//console.log(galleryProductId);
 
 	var matchingGalleryProduct = products.filter(matchedGalleryProduct => {
 		return matchedGalleryProduct.id = galleryProductId;	
@@ -344,6 +344,7 @@ for(figure of figuresInGallery) {
 	var galleryProductIdNum = parseInt(galleryProductId, 10);
 	var priceOfGalleryProduct = matchingGalleryProduct[galleryProductIdNum - 1].price;
 	priceOfGalleryProduct = priceOfGalleryProduct.toLocaleString('en-US');
+
 	var nameOfGalleryProduct = matchingGalleryProduct[galleryProductIdNum - 1].name;
 	productCaption.textContent = `${nameOfGalleryProduct}`;
 	productCaption.appendChild(productCaptionPrice);
@@ -352,6 +353,8 @@ for(figure of figuresInGallery) {
 	console.log(productCaptionPrice);
 
 	//console.log(matchingGalleryProduct[galleryProductId]);
-	console.log(typeof galleryProductId, typeof galleryProductIdNum, matchingGalleryProduct[galleryProductIdNum - 1].price);
+	//console.log(typeof galleryProductId, typeof galleryProductIdNum, matchingGalleryProduct[galleryProductIdNum - 1].price);
+}
 }
 
+addProductDetails();
