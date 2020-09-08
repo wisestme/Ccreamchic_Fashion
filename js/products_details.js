@@ -314,7 +314,8 @@ for (product of galleryProducts) {
 
 		// add price to modal
 		var productPrice = clickedObject[0].price;
-		getProductPrice.textContent = productPrice;
+		var productPriceModalMoney = productPrice.toLocaleString('en-US');
+		getProductPrice.textContent = '#' + productPriceModalMoney;
 	})
 }
 
