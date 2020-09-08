@@ -511,7 +511,7 @@ main > .container {
 	/* Dynamic class*/
 	figure .cost {
 		color: #fff;
-		
+		text-align: center;
 		background: var(--accent);
 		position: relative;
 		top: -0.1em;
