@@ -777,3 +777,12 @@ input[type=submit] {
 	color: #fff;
 	list-style: none;
 }
+
+/* Hide/show on click*/
+#products_gallery .hide {
+	display: none;
+}
+
+#products_gallery .show {
+	display: none;
+}
