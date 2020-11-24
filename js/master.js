@@ -146,6 +146,6 @@ for (premium of premiumProducts) {
 // REMOVE DISPLAYED PRODUCT
 // AND SHOW PREVIOUS SCREEN
 closeModal.addEventListener('click', function() {
-	getModalOverlay.style.top = '-100vh';
-	getModalContainer.style.top = '-100vh';
+	getModalOverlay.style.top = '-120vh';
+	getModalContainer.style.top = '-120vh';
 })
