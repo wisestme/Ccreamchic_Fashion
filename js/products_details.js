@@ -17,7 +17,7 @@ let products = [
 
 	{
 		'id': '0003',
-		'name': 'MAN SET',
+		'name': 'Man Set',
 		'price': 11500,
 		'description': 'Avon Man Eau de Toilette is a conspicuously masculine fragrance that will give you self-confidence at any time of the day.',
 		'details': 'Can be bought as a Combo or individually. Suitable for All Skin Types'
@@ -33,7 +33,7 @@ let products = [
 
 	{
 		'id': '0005',
-		'name': 'Avon Care Hand Creams',
+		'name': 'Care Hand Creams',
 		'price': 1200,
 		'description': 'Our Collection of Handcreams ranges from Intense Hydration to Anti ageing. ',
 		'details': 'Smells nice, 75ml each. Suitable for All Skin Types. '
@@ -185,10 +185,42 @@ let products = [
 
 	{
 		'id': '0024',
-		'name': 'Avon Roll-Ons Deodorant',
+		'name': 'Roll-Ons Deodorant',
 		'price': 1300,
 		'description': 'Keeps you fresh All Day Long.',
 		'details': '50ml and suitable for All Skin Types.'
+	},
+
+	{
+		'id': '0025',
+		'name': 'Advance Technique Hair Sprays, Leave in Treatment',
+		'price': 2800,
+		'description': 'Give your hair the treatment it deserves with Avon Advance Formulas',
+		'details': 'Hair Spray Hold, Leave in Treatment'
+	},
+
+	{
+		'id': '0026',
+		'name': 'Avon Gel Shine Nail Enamel',
+		'price': 3200,
+		'description': 'keeping your nails long and colourful with no UV lamp or Shellac required.',
+		'details': '10ml'
+	},
+
+	{
+		'id': '0027',
+		'name': 'Advance Technique Hair Care Range.',
+		'price': 2500,
+		'description': 'From Shampoos to Conditioners, Hair Treatments, Serums',
+		'details': 'Advance Technique Hair Treatment'
+	},
+
+	{
+		'id': '0028',
+		'name': 'Avon Gel Shine Nail Enamel.',
+		'price': 3200,
+		'description': 'Sweep on long lasting salon style gel nail enamel for a lasting manicure at home',
+		'details': '10ml'
 	}
 	
 ]
@@ -304,6 +336,7 @@ for (product of galleryProducts) {
 		var clickedObject = products.filter(product => {
 			return product.name === productName;
 		})
+		console.log(clickedObject);
 		console.log(clickedObject[0].description);
 		// add description to modal
 		var productDescription = clickedObject[0].description;
