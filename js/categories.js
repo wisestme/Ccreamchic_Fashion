@@ -10,6 +10,8 @@ for(category of categories) {
 		// get clicked category
 		let clickedCategory = this.children[1].textContent.toLowerCase();
 		console.log(clickedCategory);
+		//remove spaces between words
+		clickedCategory = clickedCategory.replace(/ +/g, "");
 
 		// Get gallery  all products
 		let galleryProducts = document.querySelectorAll('.gallery_product');
