@@ -347,7 +347,8 @@ footer {
 }
 
 .hamburger_modal,
-.overlay {
+.overlay,
+#online_shop_modal {
 	padding: 2em;
 	width: 100vw;
 	position: fixed;
@@ -357,7 +358,8 @@ footer {
 	transition: 0.5s ease;
 }
 
-.hamburger_modal {
+.hamburger_modal,
+#online_shop_modal {
 	height: 70vh;
 	justify-content: space-around;
 }
