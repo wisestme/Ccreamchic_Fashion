@@ -348,6 +348,7 @@ footer {
 
 .hamburger_modal,
 .overlay,
+.overlay2,
 .shop_online_modal {
 	padding: 2em;
 	width: 100vw;
@@ -364,7 +365,8 @@ footer {
 	justify-content: space-around;
 }
 
-.overlay {
+.overlay,
+.overlay2 {
 	height: 100vh;	
 	opacity: 0.9;
 }

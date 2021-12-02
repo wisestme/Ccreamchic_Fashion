@@ -6,6 +6,7 @@ let hamburgerIcon = document.querySelector('.fa-bars');
 let hamburgerModal = document.querySelector('.hamburger_modal');
 
 let overlay = document.querySelector('.overlay');
+let overlay2 = document.querySelector('.overlay2');
 let hamburgerCloseIcon = document.querySelector('.hamburger_close');
 
 
@@ -33,22 +34,25 @@ hamburgerCloseIcon.addEventListener('click', () => {
 });
 
 // COLLAPSE/EXPAND online shop MENU
-let shopOnline = document.querySelector('#shopOnline');
+let shopOnline = document.querySelectorAll('.shop_online');
 let shopOnlineModal = document.querySelector('.shop_online_modal');
 let onlineShopCloseIcon = document.querySelector('.online_shop_close');
 
-
-shopOnline.addEventListener('click', () => {
-	shopOnlineModal.style.right = '0';
-	overlay.style.right = '0';
-	phoneIcon.style.display = 'none';
-	console.log(shopOnlineModal);
-	
+shopOnline.forEach(onlineShop => {
+	onlineShop.addEventListener('click', () => {
+		shopOnlineModal.style.right = '0';
+		overlay2.style.right = '0';
+		phoneIcon.style.display = 'none';
+		console.log(shopOnlineModal);
+		
+	});
 });
+
+
 
 onlineShopCloseIcon.addEventListener('click', () => {
 	shopOnlineModal.style.right = '-100vw';
-	overlay.style.right = '-100vw';
+	overlay2.style.right = '-100vw';
 	phoneIcon.style.display = 'flex';
 });
 
