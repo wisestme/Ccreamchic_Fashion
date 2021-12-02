@@ -410,6 +410,12 @@ footer {
 	grid-template-columns: 1fr 1fr;
 }
 
+.shop_online_modal > p:nth-child(2) {
+	color: var(--header-main);
+	text-align: center;
+	margin-top: 6rem;
+}
+
 
 
 .test {
