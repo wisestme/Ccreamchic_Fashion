@@ -4,6 +4,7 @@ let modal = document.querySelector('.modal');
 let closeIcon = document.querySelector('.close');
 let hamburgerIcon = document.querySelector('.fa-bars');
 let hamburgerModal = document.querySelector('.hamburger_modal');
+
 let overlay = document.querySelector('.overlay');
 let hamburgerCloseIcon = document.querySelector('.hamburger_close');
 
@@ -27,6 +28,26 @@ hamburgerIcon.addEventListener('click', () => {
 
 hamburgerCloseIcon.addEventListener('click', () => {
 	hamburgerModal.style.right = '-100vw';
+	overlay.style.right = '-100vw';
+	phoneIcon.style.display = 'flex';
+});
+
+// COLLAPSE/EXPAND online shop MENU
+let shopOnline = document.querySelector('#shopOnline');
+let shopOnlineModal = document.querySelector('.shop_online_modal');
+let onlineShopCloseIcon = document.querySelector('.online_shop_close');
+
+
+shopOnline.addEventListener('click', () => {
+	shopOnlineModal.style.right = '0';
+	overlay.style.right = '0';
+	phoneIcon.style.display = 'none';
+	console.log(shopOnlineModal);
+	
+});
+
+onlineShopCloseIcon.addEventListener('click', () => {
+	shopOnlineModal.style.right = '-100vw';
 	overlay.style.right = '-100vw';
 	phoneIcon.style.display = 'flex';
 });
